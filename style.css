@@ -1,0 +1,339 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: pokemon-rbygsc-font;
+  src: url(pokemon-fonts/PKMN-RBYGSC.ttf);
+  /* font credits to dafont.com */
+}
+
+@font-face {
+  font-family: pokemon-solid;
+  src: url(pokemon-fonts/Pokemon-Solid.ttf);
+  /* font credits to dafont.com */
+}
+
+@font-face {
+  font-family: pokemon-xy;
+  src: url(pokemon-fonts/PokemonX-and-Y.ttf);
+  /* font credits to dafont.com */
+}
+
+header {
+  background-color: teal;
+  border-bottom: 4px solid goldenrod;
+  text-align: center;
+  padding: 15px;
+}
+header p {
+  font-family: pokemon-xy;
+}
+
+#welcome-header {
+  font-family: pokemon-solid;
+  color: goldenrod;
+}
+
+#game-container {
+  background-color: #fe4c3e;
+}
+#game-message {
+  font-family: pokemon-rbygsc-font;
+  text-align: center;
+  padding: 15px;
+}
+
+#image-box {
+  background-color: #ff6e3f;
+  background-image: radial-gradient(
+    circle,
+    #add8e6 30%,
+    #ff6e3f 68%,
+    #fe4c3e 100%
+  );
+  padding: 15px;
+  text-align: center;
+}
+
+#image-box img {
+  width: 100%;
+  filter: contrast(0%) brightness(0%);
+}
+
+#image-box .imgReveal {
+  animation-name: revealImg;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  filter: contrast(100%) brightness(100%);
+}
+
+#side-box {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#score-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#score-box label {
+  width: 25%;
+  font-family: pokemon-xy;
+  text-align: center;
+  padding: 10px;
+}
+
+#lblPlayerScore,
+#lblBestScore {
+  font-size: 5.2vh;
+}
+
+#pokemon-details {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#pokemon-details label {
+  width: 45%;
+  font-family: pokemon-xy;
+  text-align: center;
+  padding: 5px;
+}
+
+#pokemon-details #lblPokeName,
+#pokemon-details #lblDexNum {
+  background-color: #d3cfcc;
+  margin-bottom: 5px;
+}
+
+/* Pokemon Typing Colors */
+
+.Normal,
+.Fire,
+.Fighting,
+.Water,
+.Flying,
+.Grass,
+.Poison,
+.Electric,
+.Ground,
+.Psychic,
+.Rock,
+.Ice,
+.Bug,
+.Dragon,
+.Ghost,
+.Dark,
+.Steel,
+.Fairy,
+.Normal {
+  color: white;
+  border-radius: 24px;
+  border: 1px solid white;
+}
+
+.Normal {
+  background-color: #a8a878;
+}
+.Fire {
+  background-color: #f08030;
+}
+.Fighting {
+  background-color: #c03028;
+}
+.Water {
+  background-color: #6890f0;
+}
+.Flying {
+  background-color: #a890f0;
+}
+.Grass {
+  background-color: #78c84f;
+}
+.Poison {
+  background-color: #a040a0;
+}
+.Electric {
+  background-color: #f8d030;
+}
+.Ground {
+  background-color: #e0c068;
+}
+.Psychic {
+  background-color: #f85888;
+}
+.Rock {
+  background-color: #b7a039;
+}
+.Ice {
+  background-color: #98d8d8;
+}
+.Bug {
+  background-color: #a8b820;
+}
+.Dragon {
+  background-color: #7039f8;
+}
+.Ghost {
+  background-color: #705898;
+}
+.Dark {
+  background-color: #705848;
+}
+.Steel {
+  background-color: #b8b8d0;
+}
+.Fairy {
+  background-color: #ee99ac;
+}
+.NA {
+  color: white;
+  border-radius: 24px;
+  border: 1px solid white;
+}
+
+@keyframes revealImg {
+  0% {
+    filter: contrast(0%) brightness(0%);
+    opacity: 0;
+  }
+  15% {
+    filter: contrast(15%) brightness(15%);
+    opacity: 0.15;
+  }
+  25% {
+    filter: contrast(25%) brightness(25%);
+    opacity: 0.25;
+  }
+  50% {
+    filter: contrast(50%) brightness(50%);
+    opacity: 0.5;
+  }
+  60% {
+    filter: contrast(60%) brightness(60%);
+    opacity: 0.6;
+  }
+  75% {
+    filter: contrast(75%) brightness(75%);
+    opacity: 0.65;
+  }
+  90% {
+    filter: contrast(90%) brightness(90%);
+    opacity: 0.95;
+  }
+  100% {
+    filter: contrast(100%) brightness(100%);
+    opacity: 1;
+  }
+}
+
+#action-box {
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+#action-box button {
+  width: 45%;
+  height: 40px;
+  padding: 3px 0px 3px 3px;
+  margin-top: 5px;
+  color: white;
+  background-color: #2e2e2e;
+  border-radius: 24px;
+  outline: none;
+}
+
+#user-input {
+  width: 100%;
+  height: 40px;
+  font-family: pokemon-rbygsc-font;
+  text-align: center;
+  outline: none;
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid #dddddd;
+  border-radius: 24px;
+}
+
+#user-input:focus {
+  padding: 3px 0px 3px 3px;
+  margin: 5px 1px 3px 0px;
+  background-color: whitesmoke;
+}
+
+footer {
+  background-color: teal;
+  border-top: 4px solid goldenrod;
+  padding: 15px;
+}
+
+footer p {
+  font-family: pokemon-xy;
+  text-align: center;
+}
+
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #image-box img {
+    width: 45%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  body {
+    width: 80%;
+    margin: auto;
+    background-image: url('pokeball-pattern.jpg');
+    background-repeat: space;
+  }
+
+  #welcome-header {
+    font-size: 40px;
+  }
+
+  header p {
+    font-size: larger;
+  }
+
+  #game-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
+  #game-container #game-message {
+    width: 100%;
+  }
+
+  #game-container #image-box {
+    width: 65%;
+    margin-bottom: 40px;
+  }
+
+  #game-container #side-box {
+    width: 30%;
+  }
+
+  #image-box img {
+    width: 80%;
+  }
+}

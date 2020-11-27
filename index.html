@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Who's That Pokemon Game! Gen1 Edition</title>
+  <link rel="icon" href="https://www.pngkit.com/png/detail/783-7831178_pokeball-pokeball-pixel-png.png" 
+  type="image/png" sizes="16x16">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 id="welcome-header">Who's that Poke'mon Game!</h1>
+    <p>
+      Instructions: Guess the name of the Poke'mon. If you manage to have a streak
+      of 10 you will win the game. Only the Kanto (Gen 1) Poke'mons included. You can
+      click the Hint button to hear the pokemon in-game sound.
+    </p>
+  </header>
+  <main>
+    <div id="game-container">
+      <h2 id="game-message">A wild Poke'mon appeared!!!</h2>
+      <div id="image-box">
+        <img src="pokemon/001Bulbasaur.png" />
+      </div>
+      <div id="side-box">
+        <div id="score-box">
+          <label>Current Score:</label>
+          <label id="lblPlayerScore">0</label>
+          <label>Best Score:</label>
+          <label id="lblBestScore">0</label>
+        </div>
+        <div id="pokemon-details">
+          <label id="lblPokeName">???</label>
+          <label id="lblDexNum">Dex Number: 000</label>
+          <label id="lblType1">Type 1: ----</label>
+          <label id="lblType2">Type 2: ----</label>
+        </div>
+        <div id="action-box">
+          <input id="user-input" type="text" placeholder="Pokemon Name">
+          <button id="btnGuess">Guess the name!</button>
+          <button id="btnSoundHint">Hint:</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Credits from the following: Images from the internet -  
+      <a href="https://bulbapedia.bulbagarden.net/wiki/List_of_Pokémon_by_Kanto_Pokédex_number">
+        Bulbapedia</a> -- Fonts by <a href="https://www.dafont.com">DaFont</a>
+        -- Sounds by <a href="ttps://www.sounds-resource.com/3ds/pokemonultrasunultramoon">
+          Sound Resource
+        </a>
+      </p>
+  </footer>
+  
+  <script src="script.js"></script>
+
+</body>
+</html>
