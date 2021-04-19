@@ -15,7 +15,7 @@ git clone https://github.com/ryanbariuan/whosDatPokemonGame.git
 
 3. If you have problems with the images, check if file path is correct.
 
-All resources used are from the following websites:
+All resources used are from the following websites :
 
 - Images from Bulbapedia
 - Fonts from Dafont
